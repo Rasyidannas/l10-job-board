@@ -9,6 +9,7 @@
         @vite('resources/css/app.css')
     </head>
     <body>
-      <div class=" text-4xl">This Should Big Text!</div>
+        {{-- $slot is like children in React js --}}
+        {{ $slot }}
     </body>
 </html>
