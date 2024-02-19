@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// this will be rederect to /job
-Route::get('', fn () => to_route('job.index'));
+// this will be rederect to /jobs
+Route::get('', fn () => to_route('jobs.index'));
 
-Route::resource('jobs', JobController::class)->only(['index']);
+Route::resource('jobs', JobController::class)->only(['index', 'show']);
